@@ -20,3 +20,5 @@ Experiment of 27/10/2020
   - BiomassHPLC_20201027.xlsx
   - BlueVis_Export_beginning_from_2020_10_27_11_5.csv
   - CTPC06603.Manager 88.Control.csv
+
+Additionally, the files Enz_list.xlsx and Model_Mburyatense3.xls contain a full list of enzymes taken into account in the deFBA model for M. buryatense and a detailed description of all included reactions and metabolites, repsectively.
