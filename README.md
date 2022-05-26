@@ -22,3 +22,7 @@ Experiment of 27/10/2020
   - CTPC06603.Manager 88.Control.csv
 
 Additionally, the files Enz_list.xlsx and Model_Mburyatense3.xls contain a full list of enzymes taken into account in the deFBA model for M. buryatense and a detailed description of all included reactions and metabolites, repsectively.
+
+The folder deFBA_Mbur contains the files needed to run the deFBA model for the M. buryatense model, the corresponding paramter estimation, the RBA analysis and the sensitivity analysis. Only the deFBA core code is missing due to copyright reasons. This code is available upon request by contacting Prof. Steffen Waldherr.
+
+All files in this repository are covered by the GNU GENERAL PUBLIC LICENSE.
