@@ -306,6 +306,11 @@ OD(:,2) = OD(:,2) - min(OD(:,2)); % Correction for blanc measurement
 X = [OD(:,1) calibration(OD(:,2))];
 C_Biomass = [X(:,1), phi.*(X(:,2)-min(X(:,2)))*3]; % Correction for X(0)!
 C_Biomass = [F_MTR(:,1), interp1(C_Biomass(:,1),C_Biomass(:,2),F_MTR(:,1))]; % Interpolate to obtain the valueas at the same time points as for the other contributions
+size_X = size(X);
+X_label = mat2cell([[0,0]; X], ones(size_X(1)+1,1), ones(size_X(2),1));;
+X_label{1,1} = "Time [h]";
+X_label{1,2} = "Calibrated OD [AU]";
+writecell(X_label, "OD_13072020.csv", "FileType", "text");
 
 frac_X = C_Biomass(:,2);%./F_MTR(:,2);
 frac_CO2 = F_CTR(:,2);%./F_MTR(:,2);
